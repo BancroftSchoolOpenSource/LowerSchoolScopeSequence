@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{enumitem,amssymb}
+\usepackage{lipsum} % for filler text
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+	pdftitle={Lower School Scope and Sequence},
+	pdfpagemode=FullScreen,
+}
+
+
+
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{easylist}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[RE,LO]{Version VERSIONNUMBER} % other info in "inner" position of footer line
+\fancyhead[R]{ \date{\today}}
+
+\usepackage{pgfgantt}
+
+\usepackage[landscape,margin=0.75in,headsep=.2in]{geometry}
+
+
+\def\myProgress{90}
+\def\nametags{Nametags}
+\def\ppt{PowerPoint}
+
+\begin{document}
+	\title{Lower School Scope and Sequence}
+	\begin{titlepage}
+		\vspace*{\stretch{1.0}}
+		\begin{center}
+			\Large\textbf{Lower School Scope and Sequence}\\
+		\end{center}
+		\vspace*{\stretch{2.0}}
+	\end{titlepage}
+	
+
+	\vspace{1cm}
+	\section{Introduction}
+	\begin{todolist}
+		\item Name Game
+		\item What is technology?
+		\item What do you know/want to learn?
+	\end{todolist}
+	\section{\nametags}
+	\begin{todolist}
+		\item Create Tinkercad account
+		\item Follow worksheet to make nametag
+		\item Turn in Nametag STL file
+	\end{todolist}
+	\section{\ppt}
+	\begin{todolist}
+		\item Create a Google Presentation
+		\item Document How to make a Nametag
+		\item Turn in PPT
+	\end{todolist}
+\newpage
+
+	\begin{figure}[tbp]
+		\begin{center}
+			\begin{ganttchart}[y unit title=0.4cm,
+				y unit chart=0.5cm,
+				vgrid,hgrid, 
+				title label anchor/.style={below=-1.6ex},
+				title left shift=.05,
+				title right shift=-.05,
+				title height=1,
+				progress label text={},
+				bar height=0.7,
+				group right shift=0,
+				group top shift=.6,
+				group height=.3]{1}{48}
+				%labels
+				\gantttitle{Rotations}{48} \\
+				\gantttitle{1}{2} 
+				\gantttitle{2}{2} 
+				\gantttitle{3}{2} 
+				\gantttitle{4}{2} 
+				\gantttitle{5}{2} 
+				\gantttitle{6}{2} 
+				\gantttitle{7}{2} 
+				\gantttitle{8}{2} 
+				\gantttitle{9}{2} 
+				\gantttitle{10}{2} 
+				\gantttitle{11}{2} 
+				\gantttitle{12}{2} 
+				\gantttitle{13}{2} 
+				\gantttitle{14}{2} 
+				\gantttitle{15}{2} 
+				\gantttitle{16}{2} 
+				\gantttitle{17}{2} 
+				\gantttitle{18}{2} 
+				\gantttitle{19}{2} 
+				\gantttitle{20}{2} 
+				\gantttitle{21}{2} 
+				\gantttitle{22}{2} 
+				\gantttitle{23}{2} 
+				\gantttitle{24}{2} \\
+				%tasks
+				\ganttbar{Intro}{1}{2} \\
+				\ganttbar{\nametags}{3}{5} \\
+				\ganttbar{\ppt}{6}{10} \\
+				\ganttbar{task 4}{11}{15} \\
+				\ganttbar{task 5}{20}{22} \\
+				\ganttbar{task 6}{18}{19} \\
+				\ganttbar{task 7}{16}{18} \\
+				\ganttbar{task 8}{21}{48}
+				
+				%relations 
+				\ganttlink{elem0}{elem1} 
+				\ganttlink{elem0}{elem3} 
+				\ganttlink{elem1}{elem2} 
+				\ganttlink{elem3}{elem4} 
+				\ganttlink{elem1}{elem5} 
+				\ganttlink{elem3}{elem5} 
+				\ganttlink{elem2}{elem6} 
+				\ganttlink{elem3}{elem6} 
+				\ganttlink{elem5}{elem7} 
+			\end{ganttchart}
+		\end{center}
+		\caption{Bancroft 5th Grade Sequence}
+	\end{figure}
+
+
+
+
+\end{document}
