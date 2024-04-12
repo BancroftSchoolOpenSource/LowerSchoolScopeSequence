@@ -38,9 +38,7 @@
 \def\FithGradeFive{Microbit}
 \def\FithGradeSix{PrintRobots}
 \def\FithGradeSeven{MicoBots}
-\def\FithGradeEight{?}
-\def\FithGradeNine{?}
-\def\FithGradeTen{?}
+\def\FithGradeEight{OldWestTrains}
 
 
 \begin{document}
@@ -54,8 +52,7 @@
 	\end{titlepage}
 	
 
-	\Large\textbf{5th Grade Technology Scope and Sequence}
-	\vspace{1cm}
+
 	\section{Introduction}
 	\begin{todolist}
 		\item Name Game
@@ -93,6 +90,7 @@
 \begin{todolist}
 	\item Intro Microbit
 	\item Intro Google Chrome
+	\item Intro Python Programming
 \end{todolist}
 \section{\FithGradeSix}
 \begin{todolist}
@@ -105,7 +103,13 @@
 	\item Integrate music maker program
 	\item add Dancing
 \end{todolist}
-
+\section{\FithGradeEight}
+\begin{todolist}
+	\item Introduce ElecFreak kit
+	\item Introduce line sensor
+	\item Introduce Ultrasonic
+	\item Make line follower with obstacle avoidance
+\end{todolist}
 \newpage
 
 	\begin{figure*}[t]
@@ -153,26 +157,30 @@
 				\ganttbar{\FithGradeone}{3}{4} \\
 				\ganttbar{\FithGradetwo}{5}{8} \\
 				\ganttbar{\FithGradeThree}{9}{13} \\
+				\ganttbar{CS Gratitude}{6}{13} \\
 				\ganttbar{\FithGradeFour}{14}{19} \\
 				\ganttbar{\FithGradeFive}{20}{31} \\
 				\ganttbar{\FithGradeSix}{32}{36} \\
 				\ganttbar{\FithGradeSeven}{37}{42}\\
+				\ganttbar{CS West Exp.}{32}{48}\\
 				\ganttbar{\FithGradeEight}{43}{48}
 				
 				%relations 
 				\ganttlink{elem0}{elem1} 
 				\ganttlink{elem1}{elem2} 
 				\ganttlink{elem2}{elem3} 
-				\ganttlink{elem3}{elem4} 
+				\ganttlink{elem3}{elem5} 
 				\ganttlink{elem4}{elem5} 
 				\ganttlink{elem5}{elem6} 
 				\ganttlink{elem6}{elem7} 
 				\ganttlink{elem7}{elem8} 
+				\ganttlink{elem8}{elem10} 
+				\ganttlink{elem9}{elem10} 
 			\end{ganttchart}
 		\end{center}
 		\caption{5th Grade Sequence}
 	\end{figure*}
-
+\newpage
 
 
 
